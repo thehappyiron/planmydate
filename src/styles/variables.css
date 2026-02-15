@@ -1,0 +1,70 @@
+:root {
+  /* ========== PRIMARY COLORS ========== */
+  --hero-gradient-start: #FFB3BA;
+  --hero-gradient-end: #FFC4D0;
+  --bg-main: #FEFEFE;
+  --bg-card-pink: #FFE5E8;
+  --bg-card-white: #FFFFFF;
+
+  /* ========== ACCENT COLORS ========== */
+  --text-primary: #2D2D2D;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --heart-accent: #E91E63;
+  --heart-rose: #F48FB1;
+  --success-green: #4CAF50;
+
+  /* ========== SEMANTIC COLORS ========== */
+  --status-active: #4CAF50;
+  --status-inactive: #E0E0E0;
+  --heart-unfilled: #FFC0CB;
+  --heart-filled: #E91E63;
+  --border-light: rgba(0, 0, 0, 0.06);
+  --border-input: #E0E0E0;
+  --bg-selected: #FFF5F7;
+  --bg-selected-chip: #FFE5E8;
+
+  /* ========== TYPOGRAPHY ========== */
+  --font-primary: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, system-ui, sans-serif;
+  --fs-h1: 48px;
+  --fw-h1: 700;
+  --ls-h1: -1px;
+  --fs-h2: 32px;
+  --fw-h2: 600;
+  --fs-h3: 18px;
+  --fw-h3: 600;
+  --fs-body: 15px;
+  --fw-body: 400;
+  --lh-body: 1.6;
+  --fs-small: 13px;
+  --fw-small: 500;
+  --fs-chip: 14px;
+
+  /* ========== SPACING ========== */
+  --container-max: 1400px;
+  --padding-desktop: 80px;
+  --padding-mobile: 24px;
+  --padding-top: 60px;
+  --section-gap: 48px;
+  --card-gap: 16px;
+  --card-padding: 20px;
+  --element-gap: 12px;
+
+  /* ========== BORDER RADIUS ========== */
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --radius-input: 8px;
+  --radius-pill: 20px;
+  --radius-chip: 24px;
+
+  /* ========== SHADOWS ========== */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-btn: 0 4px 12px rgba(233, 30, 99, 0.3);
+  --shadow-btn-hover: 0 6px 16px rgba(233, 30, 99, 0.4);
+
+  /* ========== TRANSITIONS ========== */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s ease;
+}

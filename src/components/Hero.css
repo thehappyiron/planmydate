@@ -1,0 +1,77 @@
+.hero {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-hearts {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.hero-heart {
+    display: inline-block;
+    filter: drop-shadow(0 2px 8px rgba(194, 24, 91, 0.2));
+}
+
+.hero-heart-lg {
+    font-size: 64px;
+    animation: heartFloat 4s ease-in-out infinite;
+}
+
+.hero-heart-sm {
+    font-size: 40px;
+    margin-left: -12px;
+    animation: heartFloat2 3.5s ease-in-out infinite;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--bg-main);
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+@media (max-width: 1023px) {
+    .hero {
+        height: 220px;
+    }
+
+    .hero-hearts {
+        top: 30px;
+        left: 40px;
+    }
+
+    .hero-heart-lg {
+        font-size: 52px;
+    }
+
+    .hero-heart-sm {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: 180px;
+    }
+
+    .hero-hearts {
+        top: 24px;
+        left: 24px;
+    }
+
+    .hero-heart-lg {
+        font-size: 44px;
+    }
+
+    .hero-heart-sm {
+        font-size: 28px;
+    }
+}

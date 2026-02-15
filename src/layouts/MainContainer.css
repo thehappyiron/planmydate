@@ -1,0 +1,17 @@
+.main-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+}
+
+@media (max-width: 1023px) {
+    .main-container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-container {
+        padding: 0 var(--padding-mobile);
+    }
+}

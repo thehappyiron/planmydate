@@ -1,0 +1,251 @@
+/* ================================================
+   SHARED FORM STYLES
+   ================================================ */
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    font-size: var(--fs-body);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+/* ========== Text Input ========== */
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-input {
+    flex: 1;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid var(--border-input);
+    border-radius: var(--radius-input);
+    font-size: var(--fs-body);
+    color: var(--text-primary);
+    background: var(--bg-card-white);
+    transition: var(--transition-fast);
+}
+
+.form-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.form-input:focus {
+    border-color: var(--heart-accent);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.location-btn {
+    white-space: nowrap;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid var(--border-input);
+    border-radius: var(--radius-input);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: var(--bg-card-white);
+    transition: var(--transition-fast);
+}
+
+.location-btn:hover {
+    border-color: var(--heart-accent);
+    background: var(--bg-selected);
+}
+
+/* ========== Budget Cards ========== */
+.budget-grid {
+    display: flex;
+    gap: var(--card-gap);
+}
+
+.budget-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    border: 2px solid var(--border-input);
+    border-radius: var(--radius-card);
+    background: var(--bg-card-white);
+    transition: var(--transition-smooth);
+}
+
+.budget-card:hover {
+    border-color: var(--heart-unfilled);
+    transform: scale(1.02);
+}
+
+.budget-card.selected {
+    border-color: var(--heart-accent);
+    background: var(--bg-selected);
+}
+
+.budget-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.budget-label {
+    font-size: var(--fs-body);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.budget-range {
+    font-size: var(--fs-small);
+    color: var(--text-secondary);
+}
+
+/* ========== Chips & Tags ========== */
+.chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.type-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    border: 2px solid var(--border-input);
+    border-radius: var(--radius-chip);
+    font-size: var(--fs-chip);
+    color: var(--text-primary);
+    background: var(--bg-card-white);
+    transition: var(--transition-fast);
+}
+
+.type-chip:hover {
+    background: var(--bg-selected);
+}
+
+.type-chip.selected {
+    background: var(--bg-selected-chip);
+    border-color: var(--heart-accent);
+    color: #C2185B;
+}
+
+.tag-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 2px solid var(--border-input);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-chip);
+    color: var(--text-primary);
+    background: var(--bg-card-white);
+    transition: var(--transition-fast);
+}
+
+.tag-btn:hover {
+    background: var(--bg-selected);
+}
+
+.tag-btn.selected {
+    background: var(--bg-selected-chip);
+    border-color: var(--heart-accent);
+    color: #C2185B;
+}
+
+/* ========== Textarea ========== */
+.personality-textarea {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 12px;
+    padding: 12px 16px;
+    border: 1px solid var(--border-input);
+    border-radius: var(--radius-input);
+    font-size: var(--fs-body);
+    color: var(--text-primary);
+    resize: vertical;
+    background: var(--bg-card-white);
+    transition: var(--transition-fast);
+}
+
+.personality-textarea::placeholder {
+    color: var(--text-tertiary);
+}
+
+.personality-textarea:focus {
+    border-color: var(--heart-accent);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+/* ========== Generate Button ========== */
+.generate-btn {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--heart-accent), var(--heart-rose));
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: var(--radius-btn);
+    box-shadow: var(--shadow-btn);
+    transition: var(--transition-smooth);
+}
+
+.generate-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-btn-hover);
+}
+
+.generate-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.generate-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.generate-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+.btn-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 767px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .budget-grid {
+        flex-direction: column;
+    }
+
+    .budget-card {
+        flex-direction: row;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .budget-icon {
+        margin-bottom: 0;
+    }
+}

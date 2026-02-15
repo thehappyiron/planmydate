@@ -1,0 +1,419 @@
+/* =============================================
+   ITINERARY VIEW STYLES
+   ============================================= */
+
+.itinerary-view {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ── Header ─────────────────────────────── */
+.itinerary-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.itinerary-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.itinerary-summary {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 16px;
+}
+
+.itinerary-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.meta-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.vibe-chip {
+    background: linear-gradient(135deg, #FFE5E8, #FFF0F3);
+    color: #C2185B;
+}
+
+.cost-chip {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.weather-chip {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+/* ── Tips Row ───────────────────────────── */
+.tips-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.tip-card {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px;
+    background: #FFF8F9;
+    border: 1px solid #FFE5E8;
+    border-radius: var(--radius-card);
+}
+
+.tip-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.tip-card strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.tip-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── Timeline ───────────────────────────── */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: 24px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--heart-accent), var(--heart-rose), #FFD6E0);
+    border-radius: 1px;
+}
+
+.time-block {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.time-block:last-child {
+    margin-bottom: 0;
+}
+
+.time-block-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.time-dot {
+    position: absolute;
+    left: -32px;
+    top: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--heart-accent);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px var(--heart-rose);
+    z-index: 1;
+}
+
+.time-block-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.time-range {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.time-info {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ── Activity Card ──────────────────────── */
+.time-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.activity-card {
+    background: var(--bg-card-white);
+    border: 1px solid #F0F0F0;
+    border-radius: var(--radius-card);
+    padding: 20px;
+    transition: var(--transition-smooth);
+}
+
+.activity-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+    border-color: var(--heart-rose);
+}
+
+.activity-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.activity-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.activity-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.activity-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.activity-tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.activity-tag.food {
+    background: #FFF3E0;
+    color: #E65100;
+}
+
+.activity-tag.activity {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.activity-tag.experience {
+    background: #F3E5F5;
+    color: #7B1FA2;
+}
+
+/* ── Place Info ──────────────────────────── */
+.activity-place {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.place-icon {
+    font-size: 14px;
+}
+
+.place-name {
+    font-weight: 600;
+    color: var(--heart-accent);
+}
+
+.place-area {
+    color: var(--text-tertiary);
+}
+
+.activity-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0 0 12px 0;
+}
+
+/* ── Details Badges ─────────────────────── */
+.activity-details {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.detail-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.detail-badge.cost {
+    background: #E8F5E9;
+    color: #388E3C;
+}
+
+.detail-badge.duration {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+/* ── Activity Tip ───────────────────────── */
+.activity-tip {
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: #FFFDE7;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    line-height: 1.5;
+}
+
+/* ── Conversation Starters ──────────────── */
+.extras-section {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid #F0F0F0;
+}
+
+.extras-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.conversation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.conversation-card {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px;
+    background: #FFF8F9;
+    border: 1px solid #FFE5E8;
+    border-radius: var(--radius-card);
+}
+
+.convo-num {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--heart-accent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.conversation-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── Backup Plan ────────────────────────── */
+.backup-section {
+    margin-top: 32px;
+    padding: 20px;
+    background: #E3F2FD;
+    border-radius: var(--radius-card);
+}
+
+.backup-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1565C0;
+}
+
+.backup-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #37474F;
+    margin: 0;
+}
+
+/* ── Responsive ─────────────────────────── */
+@media (max-width: 767px) {
+    .itinerary-title {
+        font-size: 22px;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .time-dot {
+        left: -24px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .time-info {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .activity-card {
+        padding: 16px;
+    }
+
+    .tips-row {
+        grid-template-columns: 1fr;
+    }
+
+    .conversation-cards {
+        grid-template-columns: 1fr;
+    }
+}

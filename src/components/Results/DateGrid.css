@@ -1,0 +1,69 @@
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--card-gap);
+}
+
+/* ========== Loading State ========== */
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 80px 20px;
+}
+
+.heart-pulse {
+    font-size: 48px;
+}
+
+.loading-state p {
+    font-size: var(--fs-body);
+    color: var(--text-secondary);
+}
+
+/* ========== Empty State ========== */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 48px;
+}
+
+.empty-state h3 {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-h3);
+    color: var(--text-primary);
+}
+
+.empty-state p {
+    font-size: var(--fs-body);
+    color: var(--text-secondary);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1023px) {
+    .date-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .date-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .date-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,26 @@
+.tab-nav {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.tab-btn {
+    padding: 12px 0;
+    font-size: var(--fs-body);
+    font-weight: 400;
+    color: var(--text-secondary);
+    border-bottom: 3px solid transparent;
+    transition: var(--transition-fast);
+    margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom-color: var(--heart-accent);
+}

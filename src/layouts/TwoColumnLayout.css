@@ -1,0 +1,26 @@
+.two-column-layout {
+    display: flex;
+    gap: 32px;
+    padding-top: var(--section-gap);
+}
+
+.column-left {
+    flex: 0 0 40%;
+    min-width: 0;
+}
+
+.column-right {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 1023px) {
+    .two-column-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .column-left {
+        flex: 1;
+    }
+}

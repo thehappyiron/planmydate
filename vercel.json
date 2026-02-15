@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/dates/generate",
+            "destination": "/api/generate"
+        }
+    ]
+}
